@@ -31,7 +31,7 @@ This Repo help create docker image and push it to a registry
 Here I'm using "DockerHub" Public registry. To do so we need to have dockerhub account, username and password
 1. Run the below command and continue as prompted
    > docker login
-2. Tag the image with your Docker Hub username. ---<dockerhub-username>/<repository-name>:<tag>
+2. Tag the image with your Docker Hub username. "<dockerhub-username>/<repository-name>:<tag>"
    > docker tag my-first-app:latest yourusername/my-first-app:latest
 3. Verify
    > docker images    #You should now see both tags
