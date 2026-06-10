@@ -25,3 +25,15 @@ This Repo help create docker image and push it to a registry
    > docker build -t my-first-app .
 4. Execute the below command to run the image
    > docker run my-first-app
+
+
+## Push the image to a Docker Registry
+Here I'm using "DockerHub" Public registry. To do so we need to have dockerhub account, username and password
+1. Run the below command and continue as prompted
+   > docker login
+2. Tag the image with your Docker Hub username. <dockerhub-username>/<repository-name>:<tag>
+   > docker tag my-first-app:latest yourusername/my-first-app:latest
+3. Verify
+   > docker images    #You should now see both tags
+4. Push the image
+   > docker push yourusername/my-first-app:latest
