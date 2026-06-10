@@ -2,7 +2,7 @@
 This Repo help create docker image and push it to a registry
 
 ## Install Docker
-1. Installin Docker on Linux machine
+1. Installing Docker on Linux machine
 2. execute below commands
    > sudo apt update                #Update all the packages
    > sudo apt install docker.io     #Installing Docker
@@ -17,3 +17,11 @@ This Repo help create docker image and push it to a registry
    > sudo docker run hello-world 
 5. After adding your user to the docker group, you can run Docker commands without sudo
    > docker run hello-world
+
+## Build an image and Run the Image
+1. "app.py" is the application
+2. "Dockerfile" is to create the image(Name should be Dockerfile only, otherwise you'll see errors)
+3. Execute the below command to create the image, -t helps to add tag to image
+   > docker build -t my-first-app .
+4. Execute the below command to run the image
+   > docker run my-first-app
